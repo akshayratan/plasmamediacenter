@@ -1,0 +1,189 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'metadatamusicbackend.h'
+**
+** Created: Thu May 16 20:24:01 2013
+**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.3)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "../../../../browsingbackends/metadatabackends/metadatamusicbackend/metadatamusicbackend.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'metadatamusicbackend.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.3. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_MetadataMusicBackend[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      12,   14, // methods
+       3,   74, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       3,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      22,   21,   21,   21, 0x05,
+      44,   21,   21,   21, 0x05,
+      65,   21,   21,   21, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+     105,   85,   21,   21, 0x08,
+     152,   21,   21,   21, 0x08,
+
+ // methods: signature, parameters, type, tag, flags
+     179,   21,  170,   21, 0x02,
+     194,   21,  170,   21, 0x02,
+     215,  208,   21,   21, 0x02,
+     243,  237,   21,   21, 0x02,
+     270,  264,   21,   21, 0x02,
+     305,  291,   21,   21, 0x02,
+     337,   21,   21,   21, 0x02,
+
+ // properties: name, type, flags
+     373,  365, 0x0a495103,
+     386,  365, 0x0a495103,
+     398,  170, 0x88495001,
+
+ // properties: notify_signal_id
+       0,
+       1,
+       2,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_MetadataMusicBackend[] = {
+    "MetadataMusicBackend\0\0artistFilterChanged()\0"
+    "albumFilterChanged()\0musicModelChanged()\0"
+    "startIndex,endIndex\0"
+    "musicModelDataChanged(QModelIndex,QModelIndex)\0"
+    "musicModelReset()\0QObject*\0artistsModel()\0"
+    "albumsModel()\0artist\0searchArtist(QString)\0"
+    "album\0searchAlbum(QString)\0music\0"
+    "searchMusic(QString)\0playlistModel\0"
+    "addAllSongsToPlaylist(QObject*)\0"
+    "stopAddingSongsToPlaylist()\0QString\0"
+    "artistFilter\0albumFilter\0musicModel\0"
+};
+
+void MetadataMusicBackend::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        MetadataMusicBackend *_t = static_cast<MetadataMusicBackend *>(_o);
+        switch (_id) {
+        case 0: _t->artistFilterChanged(); break;
+        case 1: _t->albumFilterChanged(); break;
+        case 2: _t->musicModelChanged(); break;
+        case 3: _t->musicModelDataChanged((*reinterpret_cast< const QModelIndex(*)>(_a[1])),(*reinterpret_cast< const QModelIndex(*)>(_a[2]))); break;
+        case 4: _t->musicModelReset(); break;
+        case 5: { QObject* _r = _t->artistsModel();
+            if (_a[0]) *reinterpret_cast< QObject**>(_a[0]) = _r; }  break;
+        case 6: { QObject* _r = _t->albumsModel();
+            if (_a[0]) *reinterpret_cast< QObject**>(_a[0]) = _r; }  break;
+        case 7: _t->searchArtist((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 8: _t->searchAlbum((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 9: _t->searchMusic((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 10: _t->addAllSongsToPlaylist((*reinterpret_cast< QObject*(*)>(_a[1]))); break;
+        case 11: _t->stopAddingSongsToPlaylist(); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData MetadataMusicBackend::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject MetadataMusicBackend::staticMetaObject = {
+    { &AbstractMetadataBackend::staticMetaObject, qt_meta_stringdata_MetadataMusicBackend,
+      qt_meta_data_MetadataMusicBackend, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &MetadataMusicBackend::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *MetadataMusicBackend::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *MetadataMusicBackend::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_MetadataMusicBackend))
+        return static_cast<void*>(const_cast< MetadataMusicBackend*>(this));
+    return AbstractMetadataBackend::qt_metacast(_clname);
+}
+
+int MetadataMusicBackend::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = AbstractMetadataBackend::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 12)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 12;
+    }
+#ifndef QT_NO_PROPERTIES
+      else if (_c == QMetaObject::ReadProperty) {
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: *reinterpret_cast< QString*>(_v) = artistFilter(); break;
+        case 1: *reinterpret_cast< QString*>(_v) = albumFilter(); break;
+        case 2: *reinterpret_cast< QObject**>(_v) = musicModel(); break;
+        }
+        _id -= 3;
+    } else if (_c == QMetaObject::WriteProperty) {
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: setArtistFilter(*reinterpret_cast< QString*>(_v)); break;
+        case 1: setAlbumFilter(*reinterpret_cast< QString*>(_v)); break;
+        }
+        _id -= 3;
+    } else if (_c == QMetaObject::ResetProperty) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyDesignable) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyScriptable) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyStored) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyEditable) {
+        _id -= 3;
+    } else if (_c == QMetaObject::QueryPropertyUser) {
+        _id -= 3;
+    }
+#endif // QT_NO_PROPERTIES
+    return _id;
+}
+
+// SIGNAL 0
+void MetadataMusicBackend::artistFilterChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+
+// SIGNAL 1
+void MetadataMusicBackend::albumFilterChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, 0);
+}
+
+// SIGNAL 2
+void MetadataMusicBackend::musicModelChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, 0);
+}
+QT_END_MOC_NAMESPACE

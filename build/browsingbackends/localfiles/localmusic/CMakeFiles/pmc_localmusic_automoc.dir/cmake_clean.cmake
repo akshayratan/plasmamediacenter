@@ -1,0 +1,9 @@
+FILE(REMOVE_RECURSE
+  "pmc_localmusic_automoc.cpp"
+  "CMakeFiles/pmc_localmusic_automoc"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/pmc_localmusic_automoc.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)
