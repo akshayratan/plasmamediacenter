@@ -56,7 +56,7 @@ Item{
             id: removeFromPlaylistButton
             width: height
             height: parent.height
-           // visible: listViewItem.ListView.isCurrentItem
+
             iconSource: "list-remove"
             onClicked: {
                 playlistModel.removeFromPlaylist (index);
